@@ -69,7 +69,7 @@ public class MyAdapterUserCV extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         String nomstr = "Nom : "+userscv.get(position).getNom();
-        String prenomstr = "Prénom (s) : "+userscv.get(position).getPrenom();
+        String prenomstr = "Prénom(s) : "+userscv.get(position).getPrenom();
         String agestr = "Age : "+userscv.get(position).getAge()+" ans";
         String emailstr = "Email : "+userscv.get(position).getEmail();
         String telephonestr = "Téléphone : "+userscv.get(position).getTelephone();

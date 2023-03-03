@@ -17,6 +17,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import sn.esmt.projetcvoffreemploie.httpconfig.Api;
 import sn.esmt.projetcvoffreemploie.httpconfig.UsersCVApiResponse;
+import sn.esmt.projetcvoffreemploie.ipconfig.Ip;
 
 public class AccessListCVActivity extends AppCompatActivity {
 
@@ -38,12 +39,13 @@ public class AccessListCVActivity extends AppCompatActivity {
         loginBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Ip ipAddresse = new Ip();
                 String email = emailTxt.getText().toString();
                 String nom = nomTxt.getText().toString();
                 String prenom = prenomTxt.getText().toString();
 
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl("http://172.20.2.187:8081")
+                        .baseUrl(ipAddresse.getIp())
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
 
@@ -72,7 +74,6 @@ public class AccessListCVActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(Call<UsersCVApiResponse> call, Throwable t) {
                         Log.d("Error : ", t.getMessage());
-                        //D/Error :: CLEARTEXT communication to 192.168.1.17 not permitted by network security policy
                         Toast.makeText(AccessListCVActivity.this, "Impossible d'accéder au serveur !", Toast.LENGTH_LONG).show();
 
                     }

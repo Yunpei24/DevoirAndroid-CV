@@ -15,7 +15,8 @@ public class OffresEmploieActivity extends ListActivity {
     TextView selection;
     String[] lesOffres = {"Business Developper H/F", "Responsable Animation des Ventes", "Sales Manager Senegal",
     "Commercial B2B", "Délégué Commercial at Orange", "Sales Manager at Free", "Chef de Secteur", "Business development & sales",
-    "Développeur full-stack", "Développeur(se) React", "Développeur Big Data", "Développeur BI Junior", "Ingénieur iOS"};
+    "Développeur full-stack", "Développeur(se) React", "Développeur Big Data", "Développeur BI Junior", "Ingénieur iOS", "Développeur JAVA",
+    "Développeu·r·se Frontend (React / React Native)", "Développeur Web Confirmé"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

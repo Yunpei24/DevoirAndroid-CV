@@ -18,6 +18,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import sn.esmt.projetcvoffreemploie.httpconfig.Api;
 import sn.esmt.projetcvoffreemploie.httpconfig.UsersCVResponse;
+import sn.esmt.projetcvoffreemploie.ipconfig.Ip;
 import sn.esmt.projetcvoffreemploie.tools.MyAdapterUserCV;
 
 public class VisualisationActivity extends AppCompatActivity {
@@ -43,8 +44,9 @@ public class VisualisationActivity extends AppCompatActivity {
     }
 
     public void chargerListeCv() {
+        Ip ipAddresse = new Ip();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://172.20.2.187:8081") //URL de base de l'API
+                .baseUrl(ipAddresse.getIp()) //URL de base de l'API
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

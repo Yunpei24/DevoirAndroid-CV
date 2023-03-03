@@ -18,6 +18,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import sn.esmt.projetcvoffreemploie.httpconfig.Api;
 import sn.esmt.projetcvoffreemploie.httpconfig.UsersCVSend;
+import sn.esmt.projetcvoffreemploie.ipconfig.Ip;
 
 public class RegistryActivity extends AppCompatActivity {
 
@@ -31,6 +32,7 @@ public class RegistryActivity extends AppCompatActivity {
     private EditText niveauEtudeTxt;
     private EditText experienceProfessionnelleTxt;
     private Button registerBtn;
+    private Button retourBt;
 
     private UsersCVSend usersCVSend;
 
@@ -50,6 +52,14 @@ public class RegistryActivity extends AppCompatActivity {
         experienceProfessionnelleTxt = (EditText) findViewById(R.id.experienceProfessionnelleTxt);
 
         registerBtn = (Button) findViewById(R.id.registryButton);
+        retourBt = (Button) findViewById(R.id.retourButton);
+
+        retourBt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +73,7 @@ public class RegistryActivity extends AppCompatActivity {
                 String specialite = specialiteTxt.getText().toString();
                 String nivEtude = niveauEtudeTxt.getText().toString();
                 String expProf = experienceProfessionnelleTxt.getText().toString();
+                Ip ipAddress = new Ip();
 
                 usersCVSend = new UsersCVSend();
 
@@ -78,7 +89,7 @@ public class RegistryActivity extends AppCompatActivity {
 
 
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl("http://172.20.2.187:8081")
+                        .baseUrl(ipAddress.getIp())
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
 
