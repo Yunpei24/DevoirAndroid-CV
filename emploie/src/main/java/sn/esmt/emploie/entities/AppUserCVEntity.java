@@ -12,22 +12,24 @@ import javax.persistence.*;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "appuserscv", uniqueConstraints = @UniqueConstraint(columnNames = {"telephone", "email"}))
+@Table(name = "appuserscv")
 public class AppUserCVEntity {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     @Column(length = 100,nullable = false)
     private String prenom;
-
     @Column(length = 100,nullable = false)
     private String nom;
     @Column(length = 50, nullable = false)
     private int age;
-    @Id//JPA ID est clée primaire
-    @Column(length = 200,nullable = false,unique = true)
+
+    @Column(length = 200, nullable = false, unique = true)
     private String email;
     @Column(length = 200,nullable = false)
     private String adresse;
-    @Column(length = 200,nullable = false)
+    @Column(length = 200,nullable = false, unique = true)
     private String telephone;
     @Column(length = 300,nullable = false)
     private String specialite;
