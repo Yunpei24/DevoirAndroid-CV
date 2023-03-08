@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fond3"
     tools:context=".VisualisationActivity">
 
     <LinearLayout
@@ -27,7 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:smoothScrollbar="true"
-            android:id="@+id/listUsercv"/>
+            android:id="@+id/listUsercv"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
     <LinearLayout

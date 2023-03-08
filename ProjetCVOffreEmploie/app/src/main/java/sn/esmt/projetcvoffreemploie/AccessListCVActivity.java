@@ -59,7 +59,10 @@ public class AccessListCVActivity extends AppCompatActivity {
                         if(response.isSuccessful()){
                             Log.d("Response :", response.body().toString());
                             String message = response.body().getMessage();
-                            String email = response.body().getEmail();
+                            //String email = response.body().getEmail();
+                            emailTxt.setText("");
+                            nomTxt.setText("");
+                            prenomTxt.setText("");
                             if(message.equals("OK")){
                                 Intent intent = new Intent(AccessListCVActivity.this, VisualisationActivity.class);
                                 startActivity(intent);

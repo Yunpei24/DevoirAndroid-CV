@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grise"
+    android:background="@drawable/fond3"
     tools:context=".WelcomeActivity">
 
     <LinearLayout
@@ -31,7 +31,7 @@
             android:layout_height="120dp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Postulez à des Offres d'emploie en Inscrivant"
+            android:text="Postulez à des Offres d'emploie en Vous Inscrivant"
             android:textSize="28dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
