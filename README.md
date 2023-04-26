@@ -2,29 +2,30 @@
 Ce projet à pour but de concevoir une application mobile qui permetra à des personnes cherchant du travail de postuler à différents offres
 d'emploie disponible sur l'application.
 
-I. Nous avons utiliser Spring boot dans la mise en place de l'application
+# I. Nous avons utiliser Spring boot dans la mise en place de l'application
 ![image](https://user-images.githubusercontent.com/98068452/234678212-6f02a88f-f8f6-4f4d-a372-c27d85e1ffe2.png)
 
-II. Pour la gestion de la base de données: MySQL de XAMP
+# II. Pour la gestion de la base de données: MySQL de XAMP
 ![Capture d'écran 2023-04-26 185349](https://user-images.githubusercontent.com/98068452/234678432-a551084c-0dc5-43be-b548-d2942115a178.png)
 
-III. Mise en place de la table avec InteliJ à l'aide de Lombok
+# III. Mise en place de la table avec InteliJ à l'aide de Lombok
 ![image](https://user-images.githubusercontent.com/98068452/234679684-054e2467-fca7-43d7-994e-36192b6d143f.png)
 
-IV. C'est avec AndroidStudio que nous avons développé l'application
+# IV. C'est avec AndroidStudio que nous avons développé l'application
 ![image](https://user-images.githubusercontent.com/98068452/234680119-cc85f0bb-14b5-4a79-a3ac-28d05d70156e.png)
 
-#Passons à présent l'exécution de l'application
+# Passons à présent l'exécution de l'application
 
-I. D'abord nous lançons le serveur avec xamp
+# I. D'abord nous lançons le serveur avec xamp
 ![image](https://user-images.githubusercontent.com/98068452/234680633-30e7414d-2d89-4f8c-ad93-d437e72f8603.png)
 
-II. Lancement de l'API développé sur IntelliJ
+# II. Lancement de l'API développé sur IntelliJ
 ![image](https://user-images.githubusercontent.com/98068452/234680949-f4e1b258-e7fb-4303-be50-1a0147dd2a0d.png)
 
 # L'application proprement dit
 
-#Page d'accueil
+# Page d'accueil
+
 ![Capture d'écran 2023-04-26 185206](https://user-images.githubusercontent.com/98068452/234681118-c8a4f40b-2a46-47ee-b57b-b9c9f61a27a9.png)
 
   1. En cliquant sur "Offre" on accède à la page de visualisation des catégories d'offre d'emploie
