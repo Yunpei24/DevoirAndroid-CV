@@ -40,8 +40,7 @@ d'emploie disponible sur l'application.
   
 #  En remplissant tous les champs et en cliquant sur "Register" il s'inscrit. Ces informations seront enregistrées dans la base de données MySQL
 
-#  2. En cliquant sur "Visualiser CV" on accède à une page d'authentification où on doit renseigner certaines informations pour arriver à
-#  visualiser les CV disponibles dans la base de données
+#  2. En cliquant sur "Visualiser CV" on accède à une page d'authentification où on doit renseigner certaines informations pour arriver à visualiser les CV disponibles dans la base de données
   
 ![VisualiserCV](https://user-images.githubusercontent.com/98068452/234684305-17cab699-e27d-490e-97f6-9cc2847a3bd2.png)
 
@@ -49,12 +48,10 @@ d'emploie disponible sur l'application.
 
 ![VisualiserCVRempl](https://user-images.githubusercontent.com/98068452/234684447-f852a493-8787-4c05-b11e-461783155b17.png)
 
-#  3. En cliquant sur "Login" si tous les champs sont correctements renseignés et existe dans la base de données, alors on accède à la
-# la page de visualisation des CV
+#  3. En cliquant sur "Login" si tous les champs sont correctements renseignés et existe dans la base de données, alors on accède à la page de visualisation des CV
  
  ![LesCV](https://user-images.githubusercontent.com/98068452/234684932-2e5573da-0ad0-464c-a482-703680269eab.png)
 
 
 
-# La réalisation de ce projet fut une belle expérience pour moi et m'a permit de gagner en compétence dans le développement
-# d'application mobile Android avec l'aide de Spring Boot
+# La réalisation de ce projet fut une belle expérience pour moi et m'a permit de gagner en compétence dans le développement d'application mobile Android avec l'aide de Spring Boot
